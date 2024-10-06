@@ -1,7 +1,7 @@
 ## Team: Demarianos
 
 Our Project: https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/demarianos
-
+Challenge: Seismic Detection Across the Solar System 
 
 ##
 
@@ -27,11 +27,22 @@ Raul de Assis Santos               <a href="https://br.linkedin.com/in/raul-sant
 
 <div>
 
-# Seismic-Detection-Across-the-Solar-System
-Seismic Detection Across the Solar System - Nasa Space Apps Challenge.
+# Seismic detection with CNN
 
 Only a fraction of seismic data on Planetary Seismology is useful and missons struggle
 with the power requirements to send data back to Earth. With this in mind, we developed
 an algorithm that is capable to discern when start and when to stop the recordings.
+
+</div>
+
+##
+
+<div>
+
+# Fourier View
+
+At the "Fourier View", a class named "fourier_and_heatmap.py" was created in order to simplify the viewing of the file data in the Fourier space. With this class you can properly calculate the FFT and plot it graphs and the heatmaps (in 2d and 3d). An example of how to do it is presented at the "using_fourier.py" file.
+
+The "Tests" folder contains the first files that motivated this analysis. Because of it we could determine that the Frequency of 1Hz was a good parameter for denoising (such as filtering).
 
 </div>
