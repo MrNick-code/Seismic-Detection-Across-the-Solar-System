@@ -88,6 +88,6 @@ In the notebook "Trigger_Parameters.ipynb" [Enzo (Sou eu)]
 
 # Calculate Event Times
 
-The file "calculate_event_times.py" provides [Enzo]
+The file "calculate_event_times.py" provides [Enzo (é o enzo)]
 
 </div>
