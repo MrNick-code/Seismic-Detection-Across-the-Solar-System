@@ -2,7 +2,8 @@
 
 Our Project: https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/demarianos
 
-<div>
+
+##
 
 Members:  
 
@@ -21,8 +22,6 @@ Pedro Ruiz Pereira Lopes           <a href="https://www.linkedin.com/in/pedro-ru
 Raul de Assis Santos               <a href="https://br.linkedin.com/in/raul-santos-a53953272" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>         
 
 
-
-</div>
 
 ##
 
