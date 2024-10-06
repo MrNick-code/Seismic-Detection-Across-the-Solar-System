@@ -78,7 +78,7 @@ PyWEED was used in order to provide new data. The file "pyweed.zip" contains the
 
 # Trigger_Parameters
 
-In the notebook "Trigger_Parameters.ipynb" [Enzo]
+In the notebook "Trigger_Parameters.ipynb" [Enzo (Sou eu)]
 
 </div>
 
