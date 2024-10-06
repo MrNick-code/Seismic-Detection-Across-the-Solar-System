@@ -2,7 +2,9 @@
 
 Our Project: <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/demarianos"></a> &nbsp;
 
-Members:  &nbsp;
+<div>
+
+Members:  
 
 Enzo Benko Giovanni (Team Owner)            <a href="https://www.linkedin.com/in/enzo-benko-286a63299/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>         &nbsp;
 Kauan Ramos Lima                   <a href="https://www.linkedin.com/in/kauan-ramos-lima-a848aa256/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>         &nbsp;
@@ -10,7 +12,11 @@ Matheus Capelin                    <a href="https://www.linkedin.com/in/matheus-
 Pedro Ruiz Pereira Lopes           <a href="https://www.linkedin.com/in/pedro-ruiz-pereira-lopes/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>         &nbsp;
 Raul de Assis Santos               <a href="https://br.linkedin.com/in/raul-santos-a53953272" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>         &nbsp;
 
+</div>
+
 ##
+
+<div>
 
 # Seismic-Detection-Across-the-Solar-System
 Seismic Detection Across the Solar System - Nasa Space Apps Challenge.
@@ -18,3 +24,5 @@ Seismic Detection Across the Solar System - Nasa Space Apps Challenge.
 Only a fraction of seismic data on Planetary Seismology is useful and missons struggle
 with the power requirements to send data back to Earth. With this in mind, we developed
 an algorithm that is capable to discern when start and when to stop the recordings.
+
+</div>
