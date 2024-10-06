@@ -18,6 +18,8 @@ fourier_analysis = FourierAnalysis(filepath=filepath)
 
 fourier_analysis.load_data(filenames)
 
+fourier_analysis.plot_fourier() #Plot the Fourier Transform of the seismic data
+
 fourier_analysis.compute_spectrograms() #Compute spectrograms for the loaded data
 
 fourier_analysis.plot_2d_heatmaps() #Plot 2D heatmaps for the spectrograms
