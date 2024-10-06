@@ -14,7 +14,13 @@ class FourierAnalysis:
         self.spectrograms = []  # List to hold spectrograms
     
     def load_data(self, filenames):
-        """Load seismic data from MiniSEED files."""
+        """
+        Load seismic data from MiniSEED files.
+        
+        Args:
+            filenames (list): List of filenames to load.
+        """
+
         for filename in filenames:
             st = read(self.filepath + filename)
             self.traces.append(st[0])  # Extract the first trace
@@ -22,13 +28,27 @@ class FourierAnalysis:
             self.sampling_rates.append(st[0].stats.sampling_rate)  # Extract the sampling rate
 
     def compute_spectrograms(self):
-        """Compute the spectrogram for each trace."""
+        """
+        Compute the spectrogram for each trace.
+        The spectrogram is computed using the scipy.signal.spectrogram function.
+        The result is stored in the self.spectrograms list.
+        Each element in the self.spectrograms list is a tuple containing:
+        
+        - frequencies: The frequencies of the spectrogram.
+        - times: The times of the spectrogram.
+        - Sxx: The power spectral density of the spectrogram.
+        """
+
         for data, sr in zip(self.data, self.sampling_rates):
             frequencies, times, Sxx = signal.spectrogram(data, sr)
             self.spectrograms.append((frequencies, times, Sxx))  # Store frequencies, times, and Sxx
     
     def plot_2d_heatmaps(self):
-        """Plot 2D heatmaps for each spectrogram."""
+        """
+        Plot 2D heatmaps for each spectrogram.
+        The heatmaps are plotted using the seaborn library.
+        """
+
         for i, (frequencies, times, Sxx) in enumerate(self.spectrograms):
             df = pd.DataFrame(data=Sxx, index=frequencies, columns=times)
             plt.figure(figsize=(12, 6))
@@ -39,7 +59,11 @@ class FourierAnalysis:
             plt.show()
 
     def plot_3d_heatmaps(self):
-        """Plot 3D heatmaps for each spectrogram."""
+        """
+        Plot 3D heatmaps for each spectrogram.
+        The heatmaps are plotted using the matplotlib library.
+        """
+
         for i, (frequencies, times, Sxx) in enumerate(self.spectrograms):
             X, Y = np.meshgrid(times, frequencies)
             fig = plt.figure(figsize=(12, 8))
