@@ -82,6 +82,44 @@ class FourierAnalysis:
             plt.title(f'3D Spectrogram for Trace {i + 1}')
             plt.show()
 
+    def plot_fourier(self):
+        """
+        Perform Fourier Transform and plot the frequency spectrum for each trace.
+        The frequency spectrum is plotted using the matplotlib library.
+
+        """
+
+        for i, trace in enumerate(self.traces):
+            data = trace.data
+            sampling_rate = trace.stats.sampling_rate
+            npts = trace.stats.npts  # Number of data points
+            
+            # Perform Fourier Transform
+            fft_data = np.fft.fft(data)
+            
+            # Generate corresponding frequency axis
+            frequencies = np.fft.fftfreq(npts, d=1/sampling_rate)
+            
+            # Compute the magnitude of the FFT result (absolute value)
+            fft_magnitude = np.abs(fft_data)
+            
+            # Plot the frequency spectrum
+            plt.figure(figsize=(10, 6))
+            plt.plot(frequencies, fft_magnitude)
+            plt.title(f'Fourier Transform of Seismic Data (Trace {i + 1})')
+            plt.xlabel('Frequency (Hz)')
+            plt.ylabel('Magnitude')
+            plt.xlim(0, sampling_rate / 2)  # Focus on positive frequencies
+            plt.grid()
+            plt.show()
+
+
+
+
+
+
+# Testing:
+
 if __name__ == '__main__':
     path = 'data/lunar/training/data/S12_GradeA/'
     filenames = [
@@ -97,6 +135,9 @@ if __name__ == '__main__':
 
     # Load data from MiniSEED files
     fourier_analysis.load_data(filenames)
+
+    # Perform Fourier Transform and plot the frequency spectrum for each trace
+    fourier_analysis.plot_fourier()
 
     # Compute spectrograms for the loaded data
     fourier_analysis.compute_spectrograms()
