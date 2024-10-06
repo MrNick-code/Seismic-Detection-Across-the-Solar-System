@@ -6,12 +6,16 @@ import scipy.signal as signal
 from obspy import read
 
 class FourierAnalysis:
+
     def __init__(self, filepath):
+
+
         self.filepath = filepath
         self.traces = []  # List to hold the traces
         self.data = []  # List to hold data from traces
         self.sampling_rates = []  # List to hold sampling rates
         self.spectrograms = []  # List to hold spectrograms
+
     
     def load_data(self, filenames):
         """
@@ -22,10 +26,13 @@ class FourierAnalysis:
         """
 
         for filename in filenames:
-            st = read(self.filepath + filename)
-            self.traces.append(st[0])  # Extract the first trace
-            self.data.append(st[0].data)  # Extract the data from the trace
-            self.sampling_rates.append(st[0].stats.sampling_rate)  # Extract the sampling rate
+            try:
+                st = read(self.filepath + filename)
+                self.traces.append(st[0])  # Extract the first trace
+                self.data.append(st[0].data)  # Extract the data from the trace
+                self.sampling_rates.append(st[0].stats.sampling_rate)  # Extract the sampling rate
+            except Exception as e:
+                print(f"Error loading {filename}: {e}")
 
     def compute_spectrograms(self):
         """
