@@ -5,7 +5,6 @@ Our Project: https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team
 
 Challenge: Seismic Detection Across the Solar System 
 
-
 Demo: https://youtu.be/zQr-R8JKsFI?si=UQSVEVJu8SyPRt_G
 
 ##
@@ -39,6 +38,16 @@ with the power requirements to send data back to Earth. With this in mind, we de
 an algorithm that is capable to discern when start and when to stop the recordings.
 Our focus on this project was to use the heatmaps images generated from the FFTs of the 
 velocity signals of seismic events on the Moon and Mars to predict their arrival time.
+
+</div>
+
+##
+
+<div>
+
+# Predictions
+
+???
 
 </div>
 
