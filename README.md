@@ -78,7 +78,7 @@ PyWEED was used in order to provide new data. The file "pyweed.zip" contains the
 
 # Trigger_Parameters
 
-In the notebook "Trigger_Parameters.ipynb" [Enzo (Sou eu)]
+The notebook "Trigger_Parameters.ipynb" was used to understand and visualize the raw data collected from the SAGE dataset and the trigger algorithms of the ObsPy library. This notebook was extremely useful to develop the logic and the way to preprocess the data.   
 
 </div>
 
@@ -88,6 +88,6 @@ In the notebook "Trigger_Parameters.ipynb" [Enzo (Sou eu)]
 
 # Calculate Event Times
 
-The file "calculate_event_times.py" provides [Enzo (é o enzo)]
+The file "calculate_event_times.py" provides the earth_catalog.csv to further understand the data and train the neural network. It works by iterating the Pyweed archives in the directory and filtering the data with the high pass filter, after filtering, it applies the trigger algorithms in the data, thus adding the event time to the data.
 
 </div>
