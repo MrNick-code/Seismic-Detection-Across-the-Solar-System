@@ -6,7 +6,7 @@ Our Project: https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team
 Challenge: Seismic Detection Across the Solar System 
 
 
-Demo: https://youtu.be/zQr-R8JKsFI?si=UQSVEVJu8SyPRt_G <a href="https://youtu.be/zQr-R8JKsFI?si=UQSVEVJu8SyPRt_G" target="_blank"><img src="https://github.com/user-attachments/assets/13a28f33-5e71-4740-b1bc-9a0586ccf080"></a>
+Demo: https://youtu.be/zQr-R8JKsFI?si=UQSVEVJu8SyPRt_G
 
 ##
 
